@@ -1,0 +1,2286 @@
+{
+  "nodes": [
+    {
+      "id": "a6c05460-faf6-4413-96d0-3f3a03f20b2d",
+      "label": "Kdo?",
+      "meaning": "Ki",
+      "type": "questionWord",
+      "inflections": {},
+      "x": -245,
+      "y": -307,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false,
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74",
+      "label": "Kaj?",
+      "meaning": "Mi?",
+      "type": "questionWord",
+      "inflections": {},
+      "x": 672,
+      "y": -426,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false,
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "a907b6ac-e9b5-4fdf-b75c-fa6f4924407c",
+      "label": "avto",
+      "meaning": "autó",
+      "type": "noun",
+      "inflections": {},
+      "x": 1049,
+      "y": -388,
+      "fixed": false,
+      "physics": false,
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "53e554ca-bef0-47c2-baf5-1fd2a6de805a",
+      "label": "avtomehanik",
+      "meaning": "autószerelő",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 102,
+      "y": -176,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "07033108-d80e-4ca3-ad21-42f40ec5bd21",
+      "label": "vlak",
+      "meaning": "vonat",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 635,
+      "y": 129,
+      "fixed": false,
+      "physics": false
+    },
+    {
+      "id": "a6f5bfb9-1070-4a22-81b2-bd59bf510f94",
+      "label": "letalo",
+      "meaning": "repülő",
+      "type": "noun",
+      "inflections": {},
+      "x": 855,
+      "y": -78,
+      "fixed": false,
+      "physics": false,
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "087dc611-35e9-4e56-8875-1b1eefb5eca1",
+      "label": "letališče",
+      "meaning": "repülőtér",
+      "type": "noun",
+      "inflections": {},
+      "x": 1083,
+      "y": 47,
+      "fixed": false,
+      "physics": false,
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "2c712449-319b-408c-b277-5a18088df26b",
+      "label": "železniška postaja",
+      "meaning": "vasútállomás",
+      "type": "noun",
+      "inflections": {},
+      "x": 813,
+      "y": 223,
+      "fixed": false,
+      "physics": false,
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "7fb1f640-ea43-46f3-be94-4d3a6623ceb6",
+      "label": "cesta",
+      "meaning": "út",
+      "type": "noun",
+      "inflections": {},
+      "x": 491,
+      "y": 34,
+      "fixed": false,
+      "physics": false,
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "ad787866-5e2d-4907-b280-9d1767a59154",
+      "label": "Kaj dela?",
+      "meaning": "Mit csinál?",
+      "type": "questionWord",
+      "inflections": {},
+      "x": -577,
+      "y": 8,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false,
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "fce7fd1a-b34a-4716-a980-739195baee8d",
+      "label": "Kakšen?",
+      "meaning": "Milyen?",
+      "type": "questionWord",
+      "inflections": {},
+      "x": -553,
+      "y": -765,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false,
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "4e41f958-5fcf-45da-9aa3-8676d456bfd0",
+      "label": "ljubiti",
+      "meaning": "szeret",
+      "type": "verb",
+      "inflections": {},
+      "x": -901,
+      "y": -250,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false,
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "25bb0507-6849-4f23-8eae-54b6b7f3396d",
+      "label": "zdravje",
+      "meaning": "egészség",
+      "type": "noun",
+      "inflections": {},
+      "x": 423,
+      "y": -642,
+      "fixed": false,
+      "physics": false,
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "980a2e6f-d716-4237-862c-cc55ce65a193",
+      "label": "iti",
+      "meaning": "megy",
+      "type": "verb",
+      "inflections": {},
+      "x": -672,
+      "y": 274,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false,
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "adaba021-2171-4ef8-99da-ef4ee5d98b15",
+      "label": "promet",
+      "meaning": "közlekedés",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 515,
+      "y": -139,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "7ad2397f-ec6b-4212-ae4b-fc4029bc89d8",
+      "label": "izobraževanje",
+      "meaning": "oktatás",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 717,
+      "y": -644,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "be98cfa6-7326-4839-9a2b-972893d46f9d",
+      "label": "šola",
+      "meaning": "iskola",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 658,
+      "y": -739,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "945bdaf0-d607-405e-92a6-f3640c4523a6",
+      "label": "univerza",
+      "meaning": "egyetem",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 815,
+      "y": -747,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "b7b7c272-f7e8-4a57-b7dd-f3f8c77d7601",
+      "label": "učitelj",
+      "meaning": "tanár",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 4,
+      "y": -763,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "d69a4a5f-a81d-4001-b6fd-94673cc6ec76",
+      "label": "čustvo",
+      "meaning": "érzelem",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "95047d12-5a39-4651-a5d6-95f1d7c04a82",
+      "label": "ljubezen",
+      "meaning": "szerelem",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -371,
+      "y": -131,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "75fe8dfd-5eee-4c41-84e5-ace3d001900a",
+      "label": "velik",
+      "meaning": "nagy",
+      "type": "adjective",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -794,
+      "y": -801,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "0d1c535f-76a0-4c0b-ad2e-5c3c15c4d4a6",
+      "label": "Kdaj?",
+      "meaning": "mikor",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -1288,
+      "y": -393,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "85e9fa0d-9f8e-4232-a116-fcef604c47ea",
+      "label": "jutri",
+      "meaning": "holnap",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -1316,
+      "y": -530,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "b262a7ae-07bd-49fc-9554-2cc133d0792a",
+      "label": "Kje?",
+      "meaning": "hol?",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -725,
+      "y": -480,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "c2c56251-dfa7-4f50-98f9-1d262a15f860",
+      "label": "nikjer",
+      "meaning": "sehol",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "fbfd4286-9312-438d-97f4-1cf499a3c4bc",
+      "label": "hrana",
+      "meaning": "étel",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1095,
+      "y": -584,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "d3e682d4-0ffe-428b-a586-39905b69f7c5",
+      "label": "Kako?",
+      "meaning": "hogyan?",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -1129,
+      "y": -895,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "bb324375-fb5e-4060-9c7b-80355f355a5b",
+      "label": "slabo",
+      "meaning": "rosszul",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -1316,
+      "y": -861,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "a3c6ed91-51ec-4121-a2c9-a561a6f746e3",
+      "label": "jogurt",
+      "meaning": "joghurt",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1239,
+      "y": -488,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "b2c45402-68b7-48cc-ab9a-a111f7eb8dc6",
+      "label": "dober",
+      "meaning": "jó",
+      "type": "adjective",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -647,
+      "y": -950,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "3358a777-e23b-41ef-a97d-d30c65c7e9b8",
+      "label": "večer",
+      "meaning": "este",
+      "type": "adjective",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -985,
+      "y": -370,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "0aecf3a4-7647-40b1-ac69-31d53d98dbd7",
+      "label": "svež",
+      "meaning": "friss",
+      "type": "adjective",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -547,
+      "y": -640,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "6e9d554d-56a3-4fbd-97e3-6510b993e3bb",
+      "label": "delati",
+      "meaning": "csinál, tesz",
+      "type": "verb",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -121,
+      "y": 135,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "29e12ca7-5ffe-486f-ab15-9218e5e53bfd",
+      "label": "zdravnik",
+      "meaning": "orvos",
+      "type": "verb",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -393,
+      "y": -348,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "a6dfb294-154d-4b03-b78a-3a3b076f1023",
+      "label": "lep",
+      "meaning": "szép",
+      "type": "adjective",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -407,
+      "y": -796,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "8edda304-af2c-4596-9704-3e39ca2c5e5b",
+      "label": "ideja",
+      "meaning": "ötket",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 956,
+      "y": -216,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "76a293e8-9762-4fc5-982c-5059a436965f",
+      "label": "podatka",
+      "meaning": "információ",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 408,
+      "y": -497,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "d250c32c-99dd-4e6f-91c1-dfcda0d1fdd6",
+      "label": "včeraj",
+      "meaning": "tegnap",
+      "type": "adverb",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -1050,
+      "y": -567,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "ae1d53fd-3e3b-43b1-9b23-94acd1e35c76",
+      "label": "zjutraj",
+      "meaning": "reggel",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -1259,
+      "y": -169,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "dfefd2f8-eaac-4d54-b4b3-25e6405780b6",
+      "label": "jesti",
+      "meaning": "eszik",
+      "type": "verb",
+      "inflections": {
+        "1st_Singular": "jem",
+        "2nd_Singular": "ješ",
+        "3rd_Singular": "je",
+        "1st_Plural": "jemo",
+        "2nd_Plural": "jeste",
+        "3rd_Plural": "jejo/jedo",
+        "1st_Dual": "midva jeva, midve jeva",
+        "2nd_Dual": "vidva jesta vidve jesta",
+        "3rd_Dual": "onadva, onedve jesta"
+      },
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 295,
+      "y": -40,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "40fbd6e7-dfa3-479d-b492-2c308af15fa6",
+      "label": "šport",
+      "meaning": "sport",
+      "type": "verb",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1087,
+      "y": -828,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "a38870e9-09e6-4581-bd77-4dcfd242f2ef",
+      "label": "nogomet",
+      "meaning": "foci",
+      "type": "verb",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1281,
+      "y": -764,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "5a2f0cbc-1f1e-41d0-a75e-cc997e40a43b",
+      "label": "žoga",
+      "meaning": "labda",
+      "type": "verb",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1247,
+      "y": -887,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "611bd85e-11a0-4d6d-a90e-07c2d72cbefc",
+      "label": "tenis",
+      "meaning": "tenisz",
+      "type": "verb",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "a896883f-22fa-478a-814b-b8bf3dae325b",
+      "label": "teniška žoga",
+      "meaning": "teniszlabda",
+      "type": "verb",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 850,
+      "y": -953,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "9ded87e0-531e-4e5d-8024-9313fe5d0579",
+      "label": "igrati",
+      "meaning": "játszik",
+      "type": "verb",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -402,
+      "y": 219,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "42b263cb-d5ff-4a44-b692-e054848341a0",
+      "label": "glasba",
+      "meaning": "zene",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 320,
+      "y": 101,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "4956a45b-e0c6-48f4-ad65-e371db2b74a5",
+      "label": "glasbilo",
+      "meaning": "hangszer",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 207,
+      "y": 212,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "1afd6be9-30a2-4ab4-9d91-f9d159c73374",
+      "label": "umetnost",
+      "meaning": "művészet",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 690,
+      "y": -335,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "b1d67a36-d837-4cda-99cb-8c4c7b4dbe4d",
+      "label": "rog",
+      "meaning": "kürt",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "5b8726b5-dc3c-41e0-8ba8-833a3dc16893",
+      "label": "čelo",
+      "meaning": "cselló",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "874e7102-e9e4-4050-984a-4d9f5813b534",
+      "label": "note",
+      "meaning": "kotta",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 421,
+      "y": 166,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "aedd8cb9-1b00-41d2-ba1d-466a647213fc",
+      "label": "umetnik",
+      "meaning": "művész",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 526,
+      "y": -332,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "071b4877-9902-4abd-924a-65c57f08c495",
+      "label": "glasbenik",
+      "meaning": "zenész",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 103,
+      "y": -407,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "0ffde59e-3712-4462-8e5d-b25f935a7f43",
+      "label": "orkester",
+      "meaning": "zenéskar",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "79891ab0-05cc-4a45-8738-a455512d9b96",
+      "label": "član orkestra",
+      "meaning": "zenekari tag",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -126,
+      "y": -127,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "f7f0a1af-9634-416b-8b58-8efac7f5ace4",
+      "label": "glas",
+      "meaning": "hang",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 413,
+      "y": -193,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "fa596a19-8933-4d62-9461-fb70f79a6534",
+      "label": "barva",
+      "meaning": "szín",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1251,
+      "y": -161,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "dcff6b71-0650-457b-9f2e-86a8e635c20d",
+      "label": "moder",
+      "meaning": "kék",
+      "type": "adjective",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1294,
+      "y": 2,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "83d90c61-af02-45ea-ae67-139424db8304",
+      "label": "rdeč",
+      "meaning": "piros",
+      "type": "adjective",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1351,
+      "y": -190,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "dc07197a-04ff-472b-8aa0-6cbdbe83d055",
+      "label": "bel",
+      "meaning": "fehér",
+      "type": "adjective",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1374,
+      "y": -37,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "e2a7f317-c0c0-4211-a787-68be178fd9ee",
+      "label": "majhen",
+      "meaning": "kicsi",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -502,
+      "y": -903,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "a1263f2e-1fa9-4395-b41c-113d35abae4d",
+      "label": "zgradba",
+      "meaning": "épület",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 345,
+      "y": -871,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "d28adf2f-0ec8-4131-bda3-50ab5fb6c5b9",
+      "label": "hiša",
+      "meaning": "ház",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "7595c950-29bd-4a2a-8cd1-52fc437ff96f",
+      "label": "stanovanje",
+      "meaning": "lakás",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "e626c5ce-9616-4190-9d56-1fb7989a2e1a",
+      "label": "srednja šola",
+      "meaning": "középiskola",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 543,
+      "y": -831,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "4ae226ab-1e5c-4ab9-a9ff-20f70c84cc12",
+      "label": "osnovna šola",
+      "meaning": "általános iskola",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 610,
+      "y": -884,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "cb2f5788-385a-4870-9bfd-37bab0173f5a",
+      "label": "profesor",
+      "meaning": "professzor",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 146,
+      "y": -707,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "c5a88a1e-5994-4320-a8b3-72cd0bad1db8",
+      "label": "vrtec",
+      "meaning": "óvoda",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "983a25be-ffbc-43df-bd66-ea46144cb202",
+      "label": "dobro",
+      "meaning": "jól",
+      "type": "adverb",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "82f540f8-6b95-4558-9fd7-79feaa8818a5",
+      "label": "slab",
+      "meaning": "gyenge",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -906,
+      "y": -693,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "2eb7a786-f38e-4276-a2dd-ae9e63e50847",
+      "label": "zelo",
+      "meaning": "nagyon",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "52fcc494-4065-4219-a523-56f8c7dd873c",
+      "label": "številka",
+      "meaning": "szám",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1477,
+      "y": -423,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "e24e551e-b143-4efc-853b-1ef13c78cdc7",
+      "label": "en",
+      "meaning": "egy",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1508,
+      "y": -552,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "e24ccc96-f3ec-42d2-9f4b-c82996a7a090",
+      "label": "dva",
+      "meaning": "kettő",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1722,
+      "y": -541,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "ba75873f-26ee-459b-8972-98b493d6c73d",
+      "label": "tri",
+      "meaning": "három",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1351,
+      "y": -517,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "46d4617a-7b60-43f6-89e2-c9cf8a7f75d3",
+      "label": "štiri",
+      "meaning": "négy",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1339,
+      "y": -457,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "d449eef7-0a60-4917-bc72-803cec6c0848",
+      "label": "pet",
+      "meaning": "öt",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1593,
+      "y": -288,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "8b804ab0-5e5f-48af-9ac5-85613f89f298",
+      "label": "šest",
+      "meaning": "hat",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1652,
+      "y": -409,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "d3770e60-b271-42da-8ae6-0c01c3916159",
+      "label": "sedem",
+      "meaning": "hét",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1500,
+      "y": -286,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "f87369dd-a58e-411a-bcc0-a323e8227c94",
+      "label": "osem",
+      "meaning": "nyolc",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1680,
+      "y": -327,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "6a21e4e5-3852-4ef2-a65a-cf4e16e4f313",
+      "label": "devet",
+      "meaning": "kilenc",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1338,
+      "y": -373,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "c4ea94a1-f10c-46b0-ab61-15262495948b",
+      "label": "deset",
+      "meaning": "tíz",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1411,
+      "y": -288,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "dd4f63c9-1678-49d2-b622-d40f87a53fb6",
+      "label": "enajst",
+      "meaning": "tizenegy",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1449,
+      "y": -254,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "5b3c9d34-bd7a-4209-bc13-1150e6ef1d3e",
+      "label": "dvanajst",
+      "meaning": "tizenkettő",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "dabb7001-0abb-4b6e-a932-4cdf4b3e6a09",
+      "label": "trinajst",
+      "meaning": "tizenhárom",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "f625452e-48f5-46a9-8cce-5212a3ad0cfb",
+      "label": "štirinajst",
+      "meaning": "tizennégy",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1537,
+      "y": -131,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "49c890e3-4846-4f83-8502-6df39e49f5de",
+      "label": "petnajst",
+      "meaning": "tizenöt",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1620,
+      "y": -128,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "88862e2f-6fcb-4566-a248-596a9b6fd0d4",
+      "label": "šestnajst",
+      "meaning": "tizenhat",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1694,
+      "y": -146,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "f1a34b77-08af-420b-a69f-97449fc79db2",
+      "label": "dvajset",
+      "meaning": "húsz",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1823,
+      "y": -568,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "4592d380-7b60-41c5-8fce-975010a5457d",
+      "label": "sto",
+      "meaning": "száz",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "ed0a6651-8894-4656-9159-1c396422575e",
+      "label": "dvesto",
+      "meaning": "kétszáz",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "b1d69056-d575-40dc-b69c-a20dba47a18d",
+      "label": "tisoč",
+      "meaning": "ezer",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1567,
+      "y": -700,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "dd3a8aa0-4b65-4251-93e9-1b88f73598f0",
+      "label": "dva tisoč",
+      "meaning": "kétezer",
+      "type": "questionWord",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": 1797,
+      "y": -673,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "71bd61bc-c3af-44f1-a908-9e3ab8a7d7a2",
+      "label": "dopoldan",
+      "meaning": "délelőtt",
+      "type": "adverb",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -1486,
+      "y": -350,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "6f5943b8-2324-416b-8d94-9ae1247e2bf6",
+      "label": "opoldne",
+      "meaning": "délben",
+      "type": "adverb",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    },
+    {
+      "id": "3be153b2-8510-4a9f-a915-dfffeeb0ad9b",
+      "label": "poldan",
+      "meaning": "dél",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -396,
+      "y": -471,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "9044f0f0-3674-41a9-9e7a-9049ca89edf6",
+      "label": "stanovati",
+      "meaning": "lakik",
+      "type": "verb",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      },
+      "x": -608,
+      "y": -98,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "physics": false
+    },
+    {
+      "id": "815eead8-42ee-4f60-9010-3f0b2081a36d",
+      "label": "sladoled",
+      "meaning": "fagyi",
+      "type": "noun",
+      "inflections": {},
+      "color": {
+        "background": "#0a1a33",
+        "border": "#00f2fe"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "8e81192d-cc65-48aa-a8bb-31ad14fe63c6",
+      "from": "a907b6ac-e9b5-4fdf-b75c-fa6f4924407c",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "87830a5f-77c5-4391-b3a1-35f48fbf191c",
+      "from": "53e554ca-bef0-47c2-baf5-1fd2a6de805a",
+      "to": "a6c05460-faf6-4413-96d0-3f3a03f20b2d"
+    },
+    {
+      "id": "d8231e8a-ef9d-4f22-af66-06e86d3eb82a",
+      "from": "087dc611-35e9-4e56-8875-1b1eefb5eca1",
+      "to": "a6f5bfb9-1070-4a22-81b2-bd59bf510f94"
+    },
+    {
+      "id": "c1596ae0-5b27-4168-9fc9-58d31bb35158",
+      "from": "2c712449-319b-408c-b277-5a18088df26b",
+      "to": "07033108-d80e-4ca3-ad21-42f40ec5bd21"
+    },
+    {
+      "id": "7a39c129-56c1-4c3c-99ac-d801238ad3f7",
+      "from": "25bb0507-6849-4f23-8eae-54b6b7f3396d",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "f4842076-bb65-4b55-b5b3-7e7fa6660806",
+      "from": "980a2e6f-d716-4237-862c-cc55ce65a193",
+      "to": "ad787866-5e2d-4907-b280-9d1767a59154"
+    },
+    {
+      "id": "d6a22725-994e-4a1c-98be-423ffe7b0714",
+      "from": "adaba021-2171-4ef8-99da-ef4ee5d98b15",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "e4067ee4-66d1-425e-bc63-44ecfb136c2f",
+      "from": "adaba021-2171-4ef8-99da-ef4ee5d98b15",
+      "to": "a907b6ac-e9b5-4fdf-b75c-fa6f4924407c"
+    },
+    {
+      "id": "4a5488f4-c366-4b3c-8563-6ca5c755a721",
+      "from": "adaba021-2171-4ef8-99da-ef4ee5d98b15",
+      "to": "53e554ca-bef0-47c2-baf5-1fd2a6de805a"
+    },
+    {
+      "id": "c389cc86-d16f-4394-ba0f-1fe9199a537c",
+      "from": "adaba021-2171-4ef8-99da-ef4ee5d98b15",
+      "to": "07033108-d80e-4ca3-ad21-42f40ec5bd21"
+    },
+    {
+      "id": "179a85af-7e18-41ee-896f-f9d36c589ff5",
+      "from": "adaba021-2171-4ef8-99da-ef4ee5d98b15",
+      "to": "a6f5bfb9-1070-4a22-81b2-bd59bf510f94"
+    },
+    {
+      "id": "e11e8b7f-7bcd-43cd-b443-c1fd5d34504e",
+      "from": "adaba021-2171-4ef8-99da-ef4ee5d98b15",
+      "to": "7fb1f640-ea43-46f3-be94-4d3a6623ceb6"
+    },
+    {
+      "id": "711ed3d5-4b06-4fa7-9e73-387c38b51e2b",
+      "from": "53e554ca-bef0-47c2-baf5-1fd2a6de805a",
+      "to": "a907b6ac-e9b5-4fdf-b75c-fa6f4924407c"
+    },
+    {
+      "id": "8cf79e3f-fbf1-4ee1-8405-e3d7a71847cf",
+      "from": "7ad2397f-ec6b-4212-ae4b-fc4029bc89d8",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "cc607e55-3ebb-425b-a6b6-733ca70e8c32",
+      "from": "be98cfa6-7326-4839-9a2b-972893d46f9d",
+      "to": "7ad2397f-ec6b-4212-ae4b-fc4029bc89d8"
+    },
+    {
+      "id": "bb98796c-9e35-4561-9a6f-6f02038281dd",
+      "from": "b7b7c272-f7e8-4a57-b7dd-f3f8c77d7601",
+      "to": "7ad2397f-ec6b-4212-ae4b-fc4029bc89d8"
+    },
+    {
+      "id": "f587c1d6-977b-49c8-8cba-5e01cc5504ac",
+      "from": "b7b7c272-f7e8-4a57-b7dd-f3f8c77d7601",
+      "to": "be98cfa6-7326-4839-9a2b-972893d46f9d"
+    },
+    {
+      "id": "fd5f56b5-6d18-4e95-96c6-a9a8cda99aa4",
+      "from": "b7b7c272-f7e8-4a57-b7dd-f3f8c77d7601",
+      "to": "a6c05460-faf6-4413-96d0-3f3a03f20b2d"
+    },
+    {
+      "id": "59e841c8-f81a-4f74-a4a4-5ef0abce841b",
+      "from": "d69a4a5f-a81d-4001-b6fd-94673cc6ec76",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "7cc00f5c-ed85-4670-a8d8-a5c3601ba697",
+      "from": "95047d12-5a39-4651-a5d6-95f1d7c04a82",
+      "to": "d69a4a5f-a81d-4001-b6fd-94673cc6ec76"
+    },
+    {
+      "id": "dda0b35c-86f0-49e8-a1f6-d8b4bc422b1d",
+      "from": "4e41f958-5fcf-45da-9aa3-8676d456bfd0",
+      "to": "ad787866-5e2d-4907-b280-9d1767a59154"
+    },
+    {
+      "id": "9bb5a06a-cc2e-4afd-8a96-a5a3c2c5ffbf",
+      "from": "4e41f958-5fcf-45da-9aa3-8676d456bfd0",
+      "to": "95047d12-5a39-4651-a5d6-95f1d7c04a82"
+    },
+    {
+      "id": "388984c6-7fd9-405c-9c9b-d1d5c09da012",
+      "from": "75fe8dfd-5eee-4c41-84e5-ace3d001900a",
+      "to": "fce7fd1a-b34a-4716-a980-739195baee8d"
+    },
+    {
+      "id": "dbdefe95-e19d-47a3-82d6-88bfc9d89392",
+      "from": "c2c56251-dfa7-4f50-98f9-1d262a15f860",
+      "to": "b262a7ae-07bd-49fc-9554-2cc133d0792a"
+    },
+    {
+      "id": "1b8ea404-395b-47f8-9ec4-2913a3a0f856",
+      "from": "fbfd4286-9312-438d-97f4-1cf499a3c4bc",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "5dca7518-eb85-4e0b-a9a8-f559bddf7e31",
+      "from": "bb324375-fb5e-4060-9c7b-80355f355a5b",
+      "to": "d3e682d4-0ffe-428b-a586-39905b69f7c5"
+    },
+    {
+      "id": "a172889d-0689-4b4c-ac5f-49eb6eab1809",
+      "from": "a3c6ed91-51ec-4121-a2c9-a561a6f746e3",
+      "to": "fbfd4286-9312-438d-97f4-1cf499a3c4bc"
+    },
+    {
+      "id": "199b3b27-03aa-4a02-bb4b-627526f3dd98",
+      "from": "b2c45402-68b7-48cc-ab9a-a111f7eb8dc6",
+      "to": "fce7fd1a-b34a-4716-a980-739195baee8d"
+    },
+    {
+      "id": "25270801-9513-4815-8e1c-589c36a80daf",
+      "from": "3358a777-e23b-41ef-a97d-d30c65c7e9b8",
+      "to": "0d1c535f-76a0-4c0b-ad2e-5c3c15c4d4a6"
+    },
+    {
+      "id": "6c50276b-5bc6-445a-844f-fa3f3596b12c",
+      "from": "6e9d554d-56a3-4fbd-97e3-6510b993e3bb",
+      "to": "ad787866-5e2d-4907-b280-9d1767a59154"
+    },
+    {
+      "id": "4e6b37c0-1612-43f2-a341-ba709a7966b3",
+      "from": "29e12ca7-5ffe-486f-ab15-9218e5e53bfd",
+      "to": "a6c05460-faf6-4413-96d0-3f3a03f20b2d"
+    },
+    {
+      "id": "67083243-92f0-4269-8a39-c0c2025041b5",
+      "from": "a6dfb294-154d-4b03-b78a-3a3b076f1023",
+      "to": "fce7fd1a-b34a-4716-a980-739195baee8d"
+    },
+    {
+      "id": "7df56016-0559-46e6-8fda-004019e66e6a",
+      "from": "0aecf3a4-7647-40b1-ac69-31d53d98dbd7",
+      "to": "fce7fd1a-b34a-4716-a980-739195baee8d"
+    },
+    {
+      "id": "84a7fca7-041f-4cf8-88cf-c4d06062b8e1",
+      "from": "8edda304-af2c-4596-9704-3e39ca2c5e5b",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "a56e092e-7165-45c0-9855-5243c420655b",
+      "from": "76a293e8-9762-4fc5-982c-5059a436965f",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "6353ff28-2d0d-4acd-98f2-b5d47dfc915c",
+      "from": "d250c32c-99dd-4e6f-91c1-dfcda0d1fdd6",
+      "to": "0d1c535f-76a0-4c0b-ad2e-5c3c15c4d4a6"
+    },
+    {
+      "id": "36723f39-33ee-44a5-8e94-d45a25792ae9",
+      "from": "85e9fa0d-9f8e-4232-a116-fcef604c47ea",
+      "to": "0d1c535f-76a0-4c0b-ad2e-5c3c15c4d4a6"
+    },
+    {
+      "id": "6dd22379-114a-41a2-b463-2015c79257f1",
+      "from": "ae1d53fd-3e3b-43b1-9b23-94acd1e35c76",
+      "to": "0d1c535f-76a0-4c0b-ad2e-5c3c15c4d4a6"
+    },
+    {
+      "id": "184ef0d4-a19f-46df-82c9-54bd25c75643",
+      "from": "dfefd2f8-eaac-4d54-b4b3-25e6405780b6",
+      "to": "ad787866-5e2d-4907-b280-9d1767a59154"
+    },
+    {
+      "id": "bc0373f7-49bd-4a26-b420-7183bdba34a9",
+      "from": "dfefd2f8-eaac-4d54-b4b3-25e6405780b6",
+      "to": "fbfd4286-9312-438d-97f4-1cf499a3c4bc"
+    },
+    {
+      "id": "00aff450-1854-4c1d-8277-5b86dc1c9677",
+      "from": "40fbd6e7-dfa3-479d-b492-2c308af15fa6",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "dc072115-3495-41cb-b0e6-23d68b80e0cc",
+      "from": "a38870e9-09e6-4581-bd77-4dcfd242f2ef",
+      "to": "40fbd6e7-dfa3-479d-b492-2c308af15fa6"
+    },
+    {
+      "id": "65abe28e-33e5-4e1e-af68-5596a797d6b5",
+      "from": "5a2f0cbc-1f1e-41d0-a75e-cc997e40a43b",
+      "to": "a38870e9-09e6-4581-bd77-4dcfd242f2ef"
+    },
+    {
+      "id": "c737119e-fa8c-4b1f-a1c8-212ad2cda91a",
+      "from": "5a2f0cbc-1f1e-41d0-a75e-cc997e40a43b",
+      "to": "40fbd6e7-dfa3-479d-b492-2c308af15fa6"
+    },
+    {
+      "id": "0e9f9d5e-5dea-4779-8399-f139ab2bb453",
+      "from": "611bd85e-11a0-4d6d-a90e-07c2d72cbefc",
+      "to": "40fbd6e7-dfa3-479d-b492-2c308af15fa6"
+    },
+    {
+      "id": "b7e5173e-841e-4529-8670-69f6c179782b",
+      "from": "a896883f-22fa-478a-814b-b8bf3dae325b",
+      "to": "611bd85e-11a0-4d6d-a90e-07c2d72cbefc"
+    },
+    {
+      "id": "a17ce3cd-e211-4777-b517-def0b6065bb5",
+      "from": "a896883f-22fa-478a-814b-b8bf3dae325b",
+      "to": "5a2f0cbc-1f1e-41d0-a75e-cc997e40a43b"
+    },
+    {
+      "id": "eb07d6d3-6195-47dc-920a-74ec32a03b28",
+      "from": "9ded87e0-531e-4e5d-8024-9313fe5d0579",
+      "to": "ad787866-5e2d-4907-b280-9d1767a59154"
+    },
+    {
+      "id": "cc351c16-7de5-4c8e-9cd5-6f76d7c753ae",
+      "from": "1afd6be9-30a2-4ab4-9d91-f9d159c73374",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "4cfeb868-0dec-4cca-9231-9ab49eba8d7f",
+      "from": "42b263cb-d5ff-4a44-b692-e054848341a0",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "40626e39-5ca4-4927-9ddd-d0a671c2cdd3",
+      "from": "42b263cb-d5ff-4a44-b692-e054848341a0",
+      "to": "4956a45b-e0c6-48f4-ad65-e371db2b74a5"
+    },
+    {
+      "id": "ab55699d-01ab-431f-85d3-b5209f042abe",
+      "from": "42b263cb-d5ff-4a44-b692-e054848341a0",
+      "to": "1afd6be9-30a2-4ab4-9d91-f9d159c73374"
+    },
+    {
+      "id": "d2404b2e-e4db-464d-8a30-a6892daed99b",
+      "from": "b1d67a36-d837-4cda-99cb-8c4c7b4dbe4d",
+      "to": "4956a45b-e0c6-48f4-ad65-e371db2b74a5"
+    },
+    {
+      "id": "363405cb-8113-4ee1-b3a9-39cdb4fb69a2",
+      "from": "5b8726b5-dc3c-41e0-8ba8-833a3dc16893",
+      "to": "4956a45b-e0c6-48f4-ad65-e371db2b74a5"
+    },
+    {
+      "id": "efb99b85-fd66-47c3-8d71-92a7140cf57b",
+      "from": "874e7102-e9e4-4050-984a-4d9f5813b534",
+      "to": "42b263cb-d5ff-4a44-b692-e054848341a0"
+    },
+    {
+      "id": "a072fbde-7716-4e3e-918d-1707123ec351",
+      "from": "aedd8cb9-1b00-41d2-ba1d-466a647213fc",
+      "to": "1afd6be9-30a2-4ab4-9d91-f9d159c73374"
+    },
+    {
+      "id": "6e93965a-5e2a-4336-ac27-8ca54512f038",
+      "from": "aedd8cb9-1b00-41d2-ba1d-466a647213fc",
+      "to": "a6c05460-faf6-4413-96d0-3f3a03f20b2d"
+    },
+    {
+      "id": "6d4dc693-b621-404d-8a9c-7103c854d92d",
+      "from": "071b4877-9902-4abd-924a-65c57f08c495",
+      "to": "aedd8cb9-1b00-41d2-ba1d-466a647213fc"
+    },
+    {
+      "id": "43f456b1-ed2d-4d64-8435-26231aa588bd",
+      "from": "071b4877-9902-4abd-924a-65c57f08c495",
+      "to": "a6c05460-faf6-4413-96d0-3f3a03f20b2d"
+    },
+    {
+      "id": "ea26847f-4457-45b3-b7d8-859e810067de",
+      "from": "071b4877-9902-4abd-924a-65c57f08c495",
+      "to": "42b263cb-d5ff-4a44-b692-e054848341a0"
+    },
+    {
+      "id": "ab8d0d98-abda-45d1-a358-4b6e2622252d",
+      "from": "0ffde59e-3712-4462-8e5d-b25f935a7f43",
+      "to": "42b263cb-d5ff-4a44-b692-e054848341a0"
+    },
+    {
+      "id": "f83bef0f-66ac-4788-a155-de92a6b5313f",
+      "from": "79891ab0-05cc-4a45-8738-a455512d9b96",
+      "to": "0ffde59e-3712-4462-8e5d-b25f935a7f43"
+    },
+    {
+      "id": "cbd5b8cc-29fa-47f2-9d8c-501859881f6a",
+      "from": "79891ab0-05cc-4a45-8738-a455512d9b96",
+      "to": "071b4877-9902-4abd-924a-65c57f08c495"
+    },
+    {
+      "id": "2746e888-8629-4fcc-ae83-efefe5017e5a",
+      "from": "79891ab0-05cc-4a45-8738-a455512d9b96",
+      "to": "a6c05460-faf6-4413-96d0-3f3a03f20b2d"
+    },
+    {
+      "id": "fc8b5aa7-9569-4591-ac27-4d6f92c923eb",
+      "from": "f7f0a1af-9634-416b-8b58-8efac7f5ace4",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "99d427e1-2f0a-43ba-b37e-c3e40c0cf55a",
+      "from": "f7f0a1af-9634-416b-8b58-8efac7f5ace4",
+      "to": "42b263cb-d5ff-4a44-b692-e054848341a0"
+    },
+    {
+      "id": "c7746c6b-d7fb-4c33-9f2e-8be7171b109b",
+      "from": "f7f0a1af-9634-416b-8b58-8efac7f5ace4",
+      "to": "071b4877-9902-4abd-924a-65c57f08c495"
+    },
+    {
+      "id": "7b9deac1-924e-4633-874b-a3819b50c2c1",
+      "from": "fa596a19-8933-4d62-9461-fb70f79a6534",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "0c587884-a414-4018-9096-464b26be9142",
+      "from": "dcff6b71-0650-457b-9f2e-86a8e635c20d",
+      "to": "fa596a19-8933-4d62-9461-fb70f79a6534"
+    },
+    {
+      "id": "d5e1eff8-d830-4868-a59e-8202bd829bcd",
+      "from": "dcff6b71-0650-457b-9f2e-86a8e635c20d",
+      "to": "fce7fd1a-b34a-4716-a980-739195baee8d"
+    },
+    {
+      "id": "6eb58a8e-01ea-43c5-8666-98230293fc78",
+      "from": "83d90c61-af02-45ea-ae67-139424db8304",
+      "to": "fa596a19-8933-4d62-9461-fb70f79a6534"
+    },
+    {
+      "id": "2c12d2e0-9687-4b93-a20b-da41b95ee08c",
+      "from": "83d90c61-af02-45ea-ae67-139424db8304",
+      "to": "fce7fd1a-b34a-4716-a980-739195baee8d"
+    },
+    {
+      "id": "85bf0cda-3ad8-463d-9ee0-d280f2c4a467",
+      "from": "dc07197a-04ff-472b-8aa0-6cbdbe83d055",
+      "to": "fa596a19-8933-4d62-9461-fb70f79a6534"
+    },
+    {
+      "id": "951f8d6c-9dfe-4056-b1dc-0bed3ec8e0b5",
+      "from": "dc07197a-04ff-472b-8aa0-6cbdbe83d055",
+      "to": "fce7fd1a-b34a-4716-a980-739195baee8d"
+    },
+    {
+      "id": "908f0962-1d13-4ddc-a096-89cbe5f431ae",
+      "from": "e2a7f317-c0c0-4211-a787-68be178fd9ee",
+      "to": "fce7fd1a-b34a-4716-a980-739195baee8d"
+    },
+    {
+      "id": "c4ee4a8b-6509-432d-8b3b-baa86b1dabe3",
+      "from": "a1263f2e-1fa9-4395-b41c-113d35abae4d",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "048f3fc4-4516-4f63-b81f-356f9994e08f",
+      "from": "d28adf2f-0ec8-4131-bda3-50ab5fb6c5b9",
+      "to": "a1263f2e-1fa9-4395-b41c-113d35abae4d"
+    },
+    {
+      "id": "795ff500-4f19-4211-8755-f8cbb26caf7a",
+      "from": "7595c950-29bd-4a2a-8cd1-52fc437ff96f",
+      "to": "a1263f2e-1fa9-4395-b41c-113d35abae4d"
+    },
+    {
+      "id": "1823afba-05c1-4212-8282-72a4292bd17d",
+      "from": "e626c5ce-9616-4190-9d56-1fb7989a2e1a",
+      "to": "be98cfa6-7326-4839-9a2b-972893d46f9d"
+    },
+    {
+      "id": "2fa04304-1151-44f9-a0cc-327e93c6cc86",
+      "from": "4ae226ab-1e5c-4ab9-a9ff-20f70c84cc12",
+      "to": "be98cfa6-7326-4839-9a2b-972893d46f9d"
+    },
+    {
+      "id": "e2a285a5-984a-4246-ae19-29b53431a0b5",
+      "from": "945bdaf0-d607-405e-92a6-f3640c4523a6",
+      "to": "be98cfa6-7326-4839-9a2b-972893d46f9d"
+    },
+    {
+      "id": "575c2edd-7016-463e-8c2a-3ee26937345a",
+      "from": "cb2f5788-385a-4870-9bfd-37bab0173f5a",
+      "to": "a6c05460-faf6-4413-96d0-3f3a03f20b2d"
+    },
+    {
+      "id": "a74288ce-dfa7-4390-adee-df46d54b07a2",
+      "from": "cb2f5788-385a-4870-9bfd-37bab0173f5a",
+      "to": "7ad2397f-ec6b-4212-ae4b-fc4029bc89d8"
+    },
+    {
+      "id": "77aff7c0-cb4f-458a-a5de-82c953fea5ce",
+      "from": "c5a88a1e-5994-4320-a8b3-72cd0bad1db8",
+      "to": "be98cfa6-7326-4839-9a2b-972893d46f9d"
+    },
+    {
+      "id": "adb6500e-a1ff-4894-b6fb-9144e4e5c122",
+      "from": "983a25be-ffbc-43df-bd66-ea46144cb202",
+      "to": "d3e682d4-0ffe-428b-a586-39905b69f7c5"
+    },
+    {
+      "id": "ca07a0d9-c43c-47c0-a28b-2d8daa5fddc9",
+      "from": "983a25be-ffbc-43df-bd66-ea46144cb202",
+      "to": "b2c45402-68b7-48cc-ab9a-a111f7eb8dc6"
+    },
+    {
+      "id": "d87f8ed2-d065-44e6-bb8f-ed0d96c5b88a",
+      "from": "82f540f8-6b95-4558-9fd7-79feaa8818a5",
+      "to": "fce7fd1a-b34a-4716-a980-739195baee8d"
+    },
+    {
+      "id": "ad989b2c-7f2f-425d-9a9e-e15c90ca2472",
+      "from": "82f540f8-6b95-4558-9fd7-79feaa8818a5",
+      "to": "bb324375-fb5e-4060-9c7b-80355f355a5b"
+    },
+    {
+      "id": "0acdbf15-2e6f-44e5-b621-0c89b95214ad",
+      "from": "2eb7a786-f38e-4276-a2dd-ae9e63e50847",
+      "to": "d3e682d4-0ffe-428b-a586-39905b69f7c5"
+    },
+    {
+      "id": "d2feb616-1632-4a85-9f24-35bd396b8524",
+      "from": "52fcc494-4065-4219-a523-56f8c7dd873c",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "dd31b734-6b1c-4ca7-b476-aacef441ae54",
+      "from": "e24e551e-b143-4efc-853b-1ef13c78cdc7",
+      "to": "52fcc494-4065-4219-a523-56f8c7dd873c"
+    },
+    {
+      "id": "8e6c131c-74ea-449a-aad4-4e6a7ffb6e1c",
+      "from": "e24ccc96-f3ec-42d2-9f4b-c82996a7a090",
+      "to": "52fcc494-4065-4219-a523-56f8c7dd873c"
+    },
+    {
+      "id": "09f90969-d139-4e2c-940d-bb829e058da3",
+      "from": "ba75873f-26ee-459b-8972-98b493d6c73d",
+      "to": "52fcc494-4065-4219-a523-56f8c7dd873c"
+    },
+    {
+      "id": "2694fbec-2e3f-40dd-a960-e11c8652c27c",
+      "from": "46d4617a-7b60-43f6-89e2-c9cf8a7f75d3",
+      "to": "52fcc494-4065-4219-a523-56f8c7dd873c"
+    },
+    {
+      "id": "3be1e402-4cd1-4565-ba63-c7fb462b4f2d",
+      "from": "8b804ab0-5e5f-48af-9ac5-85613f89f298",
+      "to": "52fcc494-4065-4219-a523-56f8c7dd873c"
+    },
+    {
+      "id": "12e4a51a-7d58-4329-a9e5-960357729b8d",
+      "from": "d3770e60-b271-42da-8ae6-0c01c3916159",
+      "to": "52fcc494-4065-4219-a523-56f8c7dd873c"
+    },
+    {
+      "id": "f95d3a69-5202-44c9-9b5d-380c1c021d5d",
+      "from": "f87369dd-a58e-411a-bcc0-a323e8227c94",
+      "to": "52fcc494-4065-4219-a523-56f8c7dd873c"
+    },
+    {
+      "id": "416d938e-ed8b-48e5-8a18-96221d160e74",
+      "from": "d449eef7-0a60-4917-bc72-803cec6c0848",
+      "to": "52fcc494-4065-4219-a523-56f8c7dd873c"
+    },
+    {
+      "id": "d0025e45-0324-42e6-9ddc-e395a1e14ba6",
+      "from": "6a21e4e5-3852-4ef2-a65a-cf4e16e4f313",
+      "to": "52fcc494-4065-4219-a523-56f8c7dd873c"
+    },
+    {
+      "id": "715b7254-4980-4db7-afa1-306ca51fc98a",
+      "from": "f1a34b77-08af-420b-a69f-97449fc79db2",
+      "to": "e24ccc96-f3ec-42d2-9f4b-c82996a7a090"
+    },
+    {
+      "id": "e090904f-e91a-4b81-a818-d4790bd0c648",
+      "from": "4592d380-7b60-41c5-8fce-975010a5457d",
+      "to": "e24e551e-b143-4efc-853b-1ef13c78cdc7"
+    },
+    {
+      "id": "a39a901f-1482-4aad-983f-0a57eadb7fd1",
+      "from": "c4ea94a1-f10c-46b0-ab61-15262495948b",
+      "to": "e24e551e-b143-4efc-853b-1ef13c78cdc7"
+    },
+    {
+      "id": "65069036-4780-4fc9-819d-34eb18cf11c0",
+      "from": "c4ea94a1-f10c-46b0-ab61-15262495948b",
+      "to": "52fcc494-4065-4219-a523-56f8c7dd873c"
+    },
+    {
+      "id": "dbcc2ca2-1ead-4407-9d62-fd4a29cd04c6",
+      "from": "c4ea94a1-f10c-46b0-ab61-15262495948b",
+      "to": "dd4f63c9-1678-49d2-b622-d40f87a53fb6"
+    },
+    {
+      "id": "3ee2e3b4-a573-42e6-a950-8eb9de5ba2a4",
+      "from": "c4ea94a1-f10c-46b0-ab61-15262495948b",
+      "to": "5b3c9d34-bd7a-4209-bc13-1150e6ef1d3e"
+    },
+    {
+      "id": "e335f7f0-1f06-4d44-b6be-91d57c0854f5",
+      "from": "c4ea94a1-f10c-46b0-ab61-15262495948b",
+      "to": "dabb7001-0abb-4b6e-a932-4cdf4b3e6a09"
+    },
+    {
+      "id": "041ce944-4a73-4e35-b6b1-0af662e42efc",
+      "from": "c4ea94a1-f10c-46b0-ab61-15262495948b",
+      "to": "f625452e-48f5-46a9-8cce-5212a3ad0cfb"
+    },
+    {
+      "id": "81efdf92-de92-41f0-9641-95ee953d8a1a",
+      "from": "c4ea94a1-f10c-46b0-ab61-15262495948b",
+      "to": "88862e2f-6fcb-4566-a248-596a9b6fd0d4"
+    },
+    {
+      "id": "3367746f-c325-4422-8ae3-ef2fdc62f44b",
+      "from": "c4ea94a1-f10c-46b0-ab61-15262495948b",
+      "to": "49c890e3-4846-4f83-8502-6df39e49f5de"
+    },
+    {
+      "id": "e8e1b6b8-5172-4bf4-b080-ecb95b7470a6",
+      "from": "c4ea94a1-f10c-46b0-ab61-15262495948b",
+      "to": "f1a34b77-08af-420b-a69f-97449fc79db2"
+    },
+    {
+      "id": "df8d2fb2-15d1-4255-b552-5091573513c8",
+      "from": "ed0a6651-8894-4656-9159-1c396422575e",
+      "to": "4592d380-7b60-41c5-8fce-975010a5457d"
+    },
+    {
+      "id": "2305295e-be6f-4450-be0f-c321a92f1c95",
+      "from": "ed0a6651-8894-4656-9159-1c396422575e",
+      "to": "e24ccc96-f3ec-42d2-9f4b-c82996a7a090"
+    },
+    {
+      "id": "2e40dfea-11a9-48c4-91c3-4a0adbebb008",
+      "from": "b1d69056-d575-40dc-b69c-a20dba47a18d",
+      "to": "e24e551e-b143-4efc-853b-1ef13c78cdc7"
+    },
+    {
+      "id": "11cae806-c57b-4de9-abf0-7b0a32d710a9",
+      "from": "dd3a8aa0-4b65-4251-93e9-1b88f73598f0",
+      "to": "e24ccc96-f3ec-42d2-9f4b-c82996a7a090"
+    },
+    {
+      "id": "f3c45f36-f672-47c4-a4b7-6887b5d62c68",
+      "from": "dd3a8aa0-4b65-4251-93e9-1b88f73598f0",
+      "to": "b1d69056-d575-40dc-b69c-a20dba47a18d"
+    },
+    {
+      "id": "8925d661-891f-47f3-a099-dbd299420ccd",
+      "from": "71bd61bc-c3af-44f1-a908-9e3ab8a7d7a2",
+      "to": "0d1c535f-76a0-4c0b-ad2e-5c3c15c4d4a6"
+    },
+    {
+      "id": "911454ae-7188-43ed-b8ab-eb5f5e058ac5",
+      "from": "6f5943b8-2324-416b-8d94-9ae1247e2bf6",
+      "to": "0d1c535f-76a0-4c0b-ad2e-5c3c15c4d4a6"
+    },
+    {
+      "id": "a21e5f86-8ba2-4bf7-b9a4-2f76d0813e9d",
+      "from": "3be153b2-8510-4a9f-a915-dfffeeb0ad9b",
+      "to": "52276fce-0dce-4eb0-9aff-e6fee8ed5d74"
+    },
+    {
+      "id": "82696691-31d4-49b0-983e-f2d340088798",
+      "from": "3be153b2-8510-4a9f-a915-dfffeeb0ad9b",
+      "to": "71bd61bc-c3af-44f1-a908-9e3ab8a7d7a2"
+    },
+    {
+      "id": "70962c01-ade3-41bf-9e74-70495c5956cd",
+      "from": "9044f0f0-3674-41a9-9e7a-9049ca89edf6",
+      "to": "ad787866-5e2d-4907-b280-9d1767a59154"
+    },
+    {
+      "id": "c36371cf-b689-46a3-ae79-f1d5ab9a7d6c",
+      "from": "9044f0f0-3674-41a9-9e7a-9049ca89edf6",
+      "to": "7595c950-29bd-4a2a-8cd1-52fc437ff96f"
+    },
+    {
+      "id": "b26a3566-1edf-4a1d-bbdd-b431321f151d",
+      "from": "815eead8-42ee-4f60-9010-3f0b2081a36d",
+      "to": "fbfd4286-9312-438d-97f4-1cf499a3c4bc"
+    }
+  ]
+}

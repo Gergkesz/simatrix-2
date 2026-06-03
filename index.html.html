@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIMATRIX</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+  <style>
+
+    :root{
+      --bg:#050811;
+      --panel:#0b1220;
+      --panel2:#08111f;
+      --cyan:#00f2fe;
+      --cyan-soft:#0ea5b7;
+      --gold:#eab308;
+      --red:#ff0055;
+      --text:#f5f7ff;
+      --muted:#86a1b8;
+      --border:#18304f;
+      --border2:#173152;
+    }
+
+    *{ box-sizing:border-box; }
+
+    html, body{
+      margin:0;
+      min-height:100%;
+    }
+
+    body{
+      min-height:100vh;
+      overflow-y:auto;
+      overflow-x:hidden;
+      font-family:'Montserrat',sans-serif;
+      color:var(--text);
+      background:
+        linear-gradient(rgba(0,242,254,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,242,254,0.05) 1px, transparent 1px),
+        var(--bg);
+      background-size:40px 40px;
+    }
+
+    .app{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      padding:14px;
+    }
+
+    .panel{
+      background:rgba(11,18,32,0.92);
+      border:1px solid rgba(0,242,254,0.15);
+      border-radius:18px;
+      padding:16px;
+      box-shadow:
+        0 0 20px rgba(0,242,254,0.08),
+        inset 0 0 10px rgba(0,242,254,0.04);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-title{
+      font-family:'Orbitron',sans-serif;
+      font-size:30px;
+      letter-spacing:3px;
+      color:var(--cyan);
+      text-shadow:0 0 14px rgba(0,242,254,0.8);
+      margin-bottom:14px;
+    }
+
+    .controls{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:12px;
+      align-items:start;
+    }
+
+    .field{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+    }
+
+    .field-label{
+      color:var(--muted);
+      font-size:12px;
+      letter-spacing:.6px;
+      text-transform:uppercase;
+    }
+
+    input, textarea, select{
+      width:100%;
+      background:#08111f;
+      border:1px solid var(--border2);
+      color:#fff;
+      border-radius:12px;
+      padding:12px;
+      outline:none;
+      font-family:'Montserrat',sans-serif;
+      transition:.18s ease;
+    }
+
+    input:focus, textarea:focus, select:focus{
+      border-color:var(--cyan);
+      box-shadow:0 0 10px rgba(0,242,254,0.55);
+    }
+
+    textarea{
+      resize:vertical;
+      min-height:42px;
+      line-height:1.35;
+    }
+
+    .char-buttons{
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+      margin-top:2px;
+    }
+
+    .char-buttons button{
+      background:#0a1a33;
+      border:1px solid rgba(0,242,254,0.35);
+      color:var(--cyan);
+      border-radius:9px;
+      padding:5px 10px;
+      cursor:pointer;
+      font-size:16px;
+      line-height:1;
+      transition:.15s ease;
+    }
+
+    .char-buttons button:hover{
+      background:rgba(0,242,254,0.12);
+      transform:translateY(-1px);
+    }
+
+    .buttons{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    button.action{
+      border:none;
+      padding:12px 18px;
+      border-radius:12px;
+      cursor:pointer;
+      color:white;
+      font-weight:600;
+      transition:.2s ease;
+      font-family:'Montserrat',sans-serif;
+    }
+
+    button.action:hover{
+      transform:translateY(-2px);
+    }
+
+    .btn-cyan{
+      background:rgba(0,242,254,0.15);
+      border:1px solid var(--cyan);
+      box-shadow:0 0 10px rgba(0,242,254,0.25);
+    }
+
+    .btn-gold{
+      background:rgba(234,179,8,0.15);
+      border:1px solid var(--gold);
+      box-shadow:0 0 10px rgba(234,179,8,0.25);
+    }
+
+    .btn-red{
+      background:rgba(255,0,85,0.15);
+      border:1px solid var(--red);
+      box-shadow:0 0 10px rgba(255,0,85,0.25);
+    }
+
+    .status{
+      margin-top:10px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    #network{
+      height:64vh;
+      min-height:520px;
+      border-radius:18px;
+      overflow:hidden;
+    }
+
+    .bottom{
+      overflow:auto;
+    }
+
+    .section-title{
+      color:var(--cyan);
+      font-family:'Orbitron',sans-serif;
+      margin-bottom:10px;
+      letter-spacing:1px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+    }
+
+    th, td{
+      border:1px solid var(--border);
+      padding:10px;
+      text-align:center;
+      vertical-align:middle;
+    }
+
+    th{
+      background:#081522;
+      color:var(--cyan);
+      font-weight:600;
+    }
+
+    td{
+      background:#09111d;
+      min-width:90px;
+    }
+
+    td[contenteditable="true"]{
+      outline:none;
+    }
+
+    td[contenteditable="true"]:focus{
+      background:#11263b;
+      box-shadow:inset 0 0 0 1px rgba(0,242,254,0.25);
+    }
+
+    .soundcloud-wrap iframe{
+      width:100%;
+      height:166px;
+      border:0;
+      display:block;
+      border-radius:14px;
+    }
+
+    .soundcloud-credit{
+      margin-top:8px;
+      font-size:10px;
+      color:#cccccc;
+      line-break:anywhere;
+      word-break:normal;
+      overflow:hidden;
+      white-space:nowrap;
+      text-overflow:ellipsis;
+      font-family:Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
+      font-weight:100;
+    }
+
+    .soundcloud-credit a{
+      color:#cccccc;
+      text-decoration:none;
+    }
+
+    .hint{
+      color:var(--muted);
+      font-size:12px;
+      margin-top:6px;
+    }
+
+    .small-note{
+      color:#9eb1c7;
+      font-size:12px;
+      margin-top:8px;
+    }
+
+    .hidden{
+      display:none;
+    }
+
+    @media (max-width: 700px){
+      #network{
+        height:56vh;
+        min-height:420px;
+      }
+      .header-title{
+        font-size:24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+
+    <div class="panel">
+      <div class="header-title">SIMATRIX</div>
+
+<div id="graphStats" style="
+color:#00f2fe;
+font-size:14px;
+margin-bottom:12px;
+font-family:'Orbitron',sans-serif;
+text-shadow:0 0 8px rgba(0,242,254,.5);
+">
+Words: 0 | Connections: 0 | Avg Links: 0
+</div>
+
+
+      <div class="controls">
+
+        <div class="field">
+          <div class="field-label">Search</div>
+          <input id="searchInput" placeholder="Search..." />
+        </div>
+
+        <div class="field">
+          <div class="field-label">Word</div>
+          <input id="wordInput" placeholder="Word" />
+          <div class="char-buttons" aria-label="Word special characters">
+            <button type="button" onclick="insertSpecial('wordInput','č')">č</button>
+            <button type="button" onclick="insertSpecial('wordInput','š')">š</button>
+            <button type="button" onclick="insertSpecial('wordInput','ž')">ž</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="field-label">Meaning</div>
+          <textarea id="meaningInput" placeholder="Meaning"></textarea>
+        </div>
+
+        <div class="field">
+          <div class="field-label">Related Words</div>
+          <input id="relatedInput" placeholder="Related Words (comma separated)" />
+          <div class="char-buttons" aria-label="Related words special characters">
+            <button type="button" onclick="insertSpecial('relatedInput','č')">č</button>
+            <button type="button" onclick="insertSpecial('relatedInput','š')">š</button>
+            <button type="button" onclick="insertSpecial('relatedInput','ž')">ž</button>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+      <div class="buttons">
+        <button class="action btn-cyan" id="addBtn">Add Word</button>
+        <button class="action btn-gold" id="saveBtn">Save Changes</button>
+        <button class="action btn-red" id="deleteBtn">Delete Selected</button>
+        <button class="action btn-gold" id="exportBtn">Export Backup File</button>
+        <button class="action btn-cyan" id="importBtn">Import Backup File</button>
+        <input type="file" id="importFile" class="hidden" accept=".json" />
+<div style="display:flex;align-items:center;gap:8px;margin-left:8px;">
+
+  <span style="
+    color:#86a1b8;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:.6px;
+  ">
+    Word Type
+  </span>
+
+  <select id="typeInput" style="
+    width:160px;
+    min-width:160px;
+  ">
+    <option value="noun">noun</option>
+    <option value="verb">verb</option>
+    <option value="adjective">adjective</option>
+    <option value="adverb">adverb</option>
+    <option value="questionWord">questionWord</option>
+  </select>
+
+</div>
+      </div>
+
+      <div class="status" id="statusText">Initializing…</div>
+      <div class="hint">Kattints egy node-ra a szerkesztéshez. A drag után a pozíció elmentődik.</div>
+    </div>
+
+    <div id="network" class="panel"></div>
+
+    <div class="panel bottom">
+      <div class="section-title">Dynamic Inflection Table</div>
+      <div id="inflectionContainer"></div>
+      <div class="small-note">
+        A táblázat mezői azonnal mentődnek gépelés közben.
+      </div>
+    </div>
+
+    <div class="panel soundcloud-wrap">
+      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay; encrypted-media" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1763198286&color=%2364745c&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/parhelia" title="Parhelia" target="_blank" style="color: #cccccc; text-decoration: none;">Parhelia</a> · <a href="https://soundcloud.com/parhelia/dreamcast-modern-ambient-jungle-mix" title="Dreamcast // [ドリームキャスト] // modern ambient jungle mix" target="_blank" style="color: #cccccc; text-decoration: none;">Dreamcast // [ドリームキャスト] // modern ambient jungle mix</a></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const DB_NAME = "SimatrixGraphDB";
+    const STORE_NAME = "graphData";
+
+    let db = null;
+    let selectedNodeId = null;
+    let saveTimer = null;
+    let isLoading = false;
+
+    const nodes = new vis.DataSet([]);
+    const edges = new vis.DataSet([]);
+
+    const defaultNodeStyle = {
+      background: "#0a1a33",
+      border: "#00f2fe"
+    };
+
+    const network = new vis.Network(
+      document.getElementById("network"),
+      { nodes, edges },
+      {
+        autoResize: true,
+        physics: {
+          stabilization: true
+        },
+        interaction: {
+          hover: true,
+          multiselect: false
+        },
+        nodes: {
+          shape: "dot",
+          size: 20,
+          borderWidth: 2,
+          color: {
+            background: defaultNodeStyle.background,
+            border: defaultNodeStyle.border,
+            highlight: {
+              background: "#00f2fe",
+              border: "#ffffff"
+            }
+          },
+          font: {
+            color: "#ffffff",
+            face: "Montserrat",
+            size: 15
+          },
+          shadow: {
+            enabled: true,
+            color: "#00f2fe",
+            size: 18
+          }
+        },
+        edges: {
+          width: 2,
+          color: {
+            color: "#1b6e85",
+            highlight: "#00f2fe"
+          },
+          smooth: true
+        }
+      }
+    );
+
+    function uuid(){
+      return crypto.randomUUID();
+    }
+
+    function setStatus(text){
+      document.getElementById("statusText").textContent = text;
+    }
+
+    function scheduleSave(){
+      if (isLoading || !db) return;
+      clearTimeout(saveTimer);
+      saveTimer = setTimeout(() => saveGraph(), 60);
+    }
+
+    function safeNodeColor(nodeId, color){
+      const current = nodes.get(nodeId);
+      if (!current) return;
+      nodes.update({
+        id: nodeId,
+        color
+      });
+    }
+
+    function resetAllNodeAppearance(){
+      nodes.forEach(node => {
+        nodes.update({
+          id: node.id,
+          color: defaultNodeStyle
+        });
+      });
+    }
+
+    function insertSpecial(targetId, char){
+      const el = document.getElementById(targetId);
+      if (!el) return;
+
+      el.focus();
+
+      const start = typeof el.selectionStart === "number" ? el.selectionStart : el.value.length;
+      const end = typeof el.selectionEnd === "number" ? el.selectionEnd : el.value.length;
+
+      const nextValue = el.value.slice(0, start) + char + el.value.slice(end);
+      el.value = nextValue;
+
+      const cursor = start + char.length;
+      try{
+        el.selectionStart = cursor;
+        el.selectionEnd = cursor;
+      }catch(_){}
+
+      el.dispatchEvent(new Event("input", { bubbles: true }));
+    }
+
+    function getNodeByLabel(label){
+      const found = nodes.get({
+        filter: n => (n.label || "").toLowerCase() === label.toLowerCase()
+      });
+      return found[0] || null;
+    }
+
+    function parseRelatedWords(){
+      return document.getElementById("relatedInput")
+        .value
+        .split(",")
+        .map(v => v.trim())
+        .filter(Boolean);
+    }
+
+    function ensureNode(label, type = "noun"){
+      const existing = getNodeByLabel(label);
+      if (existing) return existing.id;
+
+      const id = uuid();
+      nodes.add({
+        id,
+        label,
+        meaning: "",
+        type,
+        inflections: {},
+        color: defaultNodeStyle
+      });
+      return id;
+    }
+
+    function connectNodes(fromId, toId){
+      const exists = edges.get({
+        filter: e =>
+          (e.from === fromId && e.to === toId) ||
+          (e.from === toId && e.to === fromId)
+      }).length > 0;
+
+      if (!exists){
+        edges.add({
+          id: uuid(),
+          from: fromId,
+          to: toId
+        });
+      }
+    }
+
+    async function initDB(){
+      return new Promise((resolve, reject) => {
+        const request = indexedDB.open(DB_NAME, 1);
+
+        request.onupgradeneeded = (event) => {
+          const database = event.target.result;
+          if (!database.objectStoreNames.contains(STORE_NAME)){
+            database.createObjectStore(STORE_NAME, { keyPath: "id" });
+          }
+        };
+
+        request.onsuccess = (event) => {
+          db = event.target.result;
+          resolve();
+        };
+
+        request.onerror = () => reject(request.error);
+      });
+    }
+
+    async function saveGraph(){
+      if (!db || isLoading) return;
+
+      const payload = {
+        id: "mainGraph",
+        nodes: nodes.get(),
+        edges: edges.get()
+      };
+
+      const tx = db.transaction(STORE_NAME, "readwrite");
+      const store = tx.objectStore(STORE_NAME);
+      store.put(payload);
+
+      tx.oncomplete = () => {
+        setStatus("Auto-saved: " + new Date().toLocaleTimeString());
+      };
+
+      tx.onerror = () => {
+        setStatus("Save failed.");
+      };
+    }
+
+    async function loadGraph(){
+      return new Promise((resolve) => {
+        const tx = db.transaction(STORE_NAME, "readonly");
+        const store = tx.objectStore(STORE_NAME);
+        const request = store.get("mainGraph");
+
+        request.onsuccess = () => {
+          const result = request.result;
+          if (result){
+            nodes.clear();
+            edges.clear();
+            nodes.add((result.nodes || []).map(n => ({
+              ...n,
+              color: n.color || defaultNodeStyle
+            })));
+            edges.add(result.edges || []);
+          }
+          resolve();
+        };
+
+        request.onerror = () => resolve();
+      });
+    }
+
+    function getCurrentNodeData(){
+      if (!selectedNodeId) return null;
+      return nodes.get(selectedNodeId);
+    }
+
+    function buildInflectionTable(node){
+      const container = document.getElementById("inflectionContainer");
+      container.innerHTML = "";
+
+      if (!node){
+        container.innerHTML = '<div class="hint">Nincs kijelölt szó.</div>';
+        return;
+      }
+
+      const type = node.type || "noun";
+      const table = document.createElement("table");
+      const inflections = node.inflections || {};
+
+      if (type === "noun"){
+        const cases = ["Nominative", "Genitive", "Dative", "Accusative", "Locative", "Instrumental"];
+        const nums = ["Singular", "Dual", "Plural"];
+
+        let html = `<tr><th>Case</th>${nums.map(n => `<th>${n}</th>`).join("")}</tr>`;
+        cases.forEach(c => {
+          html += `<tr><th>${c}</th>`;
+          nums.forEach(n => {
+            const key = `${c}_${n}`;
+            html += `<td contenteditable="true" data-key="${key}">${inflections[key] || ""}</td>`;
+          });
+          html += `</tr>`;
+        });
+
+        table.innerHTML = html;
+      } else if (type === "verb"){
+        const persons = ["1st", "2nd", "3rd"];
+        const nums = ["Singular", "Dual", "Plural"];
+
+        let html = `<tr><th>Person</th>${nums.map(n => `<th>${n}</th>`).join("")}</tr>`;
+        persons.forEach(p => {
+          html += `<tr><th>${p}</th>`;
+          nums.forEach(n => {
+            const key = `${p}_${n}`;
+            html += `<td contenteditable="true" data-key="${key}">${inflections[key] || ""}</td>`;
+          });
+          html += `</tr>`;
+        });
+
+        table.innerHTML = html;
+      } else if (type === "adjective" || type === "adverb"){
+        const levels = ["Positive", "Comparative", "Superlative"];
+        let html = `<tr>${levels.map(v => `<th>${v}</th>`).join("")}</tr><tr>`;
+        levels.forEach(level => {
+          html += `<td contenteditable="true" data-key="${level}">${inflections[level] || ""}</td>`;
+        });
+        html += `</tr>`;
+        table.innerHTML = html;
+      } else {
+        table.innerHTML = `<tr><th>Info</th></tr><tr><td>Nem szükséges ragozási tábla ehhez a Word Type-hoz.</td></tr>`;
+      }
+
+      container.appendChild(table);
+
+      table.querySelectorAll('td[contenteditable="true"]').forEach(cell => {
+        cell.addEventListener("input", () => {
+          const current = nodes.get(node.id);
+          if (!current) return;
+
+          current.inflections = current.inflections || {};
+          current.inflections[cell.dataset.key] = cell.innerText.trim();
+          nodes.update(current);
+          scheduleSave();
+        });
+      });
+    }
+
+    function populateFields(node){
+      document.getElementById("wordInput").value = node.label || "";
+      document.getElementById("meaningInput").value = node.meaning || "";
+      document.getElementById("typeInput").value = node.type || "noun";
+
+      const related = [];
+      edges.forEach(edge => {
+        if (edge.from === node.id){
+          const other = nodes.get(edge.to);
+          if (other) related.push(other.label);
+        } else if (edge.to === node.id){
+          const other = nodes.get(edge.from);
+          if (other) related.push(other.label);
+        }
+      });
+
+      document.getElementById("relatedInput").value = related.join(", ");
+      buildInflectionTable(node);
+    }
+
+    function addWord(){
+      const word = document.getElementById("wordInput").value.trim();
+      const meaning = document.getElementById("meaningInput").value.trim();
+      const type = document.getElementById("typeInput").value;
+      const related = parseRelatedWords();
+
+      if (!word) return;
+
+      const existing = getNodeByLabel(word);
+      let mainId;
+
+      if (existing){
+        mainId = existing.id;
+        nodes.update({
+          id: mainId,
+          label: word,
+          meaning,
+          type,
+          color: existing.color || defaultNodeStyle
+        });
+      } else {
+        mainId = uuid();
+        nodes.add({
+          id: mainId,
+          label: word,
+          meaning,
+          type,
+          inflections: {},
+          color: defaultNodeStyle
+        });
+      }
+
+      related.forEach(rel => {
+        const relId = ensureNode(rel, "noun");
+        connectNodes(mainId, relId);
+      });
+
+      selectedNodeId = mainId;
+      populateFields(nodes.get(mainId));
+      network.fit({ animation: true });
+      scheduleSave();
+    }
+
+    function saveSelected(){
+      if (!selectedNodeId) return;
+
+      const current = nodes.get(selectedNodeId);
+      if (!current) return;
+
+      const word = document.getElementById("wordInput").value.trim();
+      const meaning = document.getElementById("meaningInput").value.trim();
+      const type = document.getElementById("typeInput").value;
+      const related = parseRelatedWords();
+
+      nodes.update({
+        ...current,
+        label: word || current.label,
+        meaning,
+        type
+      });
+
+      const oldEdges = edges.get({
+        filter: e => e.from === selectedNodeId || e.to === selectedNodeId
+      });
+
+      if (oldEdges.length) {
+        edges.remove(oldEdges.map(e => e.id));
+      }
+
+      related.forEach(rel => {
+        const relId = ensureNode(rel, "noun");
+        connectNodes(selectedNodeId, relId);
+      });
+
+      const updated = nodes.get(selectedNodeId);
+      buildInflectionTable(updated);
+      scheduleSave();
+    }
+
+    function deleteSelected(){
+      if (!selectedNodeId) return;
+
+      const edgeIds = edges.get({
+        filter: e => e.from === selectedNodeId || e.to === selectedNodeId
+      }).map(e => e.id);
+
+      if (edgeIds.length) edges.remove(edgeIds);
+      nodes.remove(selectedNodeId);
+
+      selectedNodeId = null;
+      document.getElementById("wordInput").value = "";
+      document.getElementById("meaningInput").value = "";
+      document.getElementById("relatedInput").value = "";
+      document.getElementById("typeInput").value = "noun";
+      buildInflectionTable(null);
+
+      scheduleSave();
+    }
+
+    function exportData(){
+      const data = {
+        nodes: nodes.get(),
+        edges: edges.get()
+      };
+
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "simatrix_backup.json";
+      a.click();
+
+      setTimeout(() => URL.revokeObjectURL(url), 250);
+    }
+
+    function importData(file){
+      const reader = new FileReader();
+
+      reader.onload = () => {
+        try{
+          const data = JSON.parse(reader.result);
+
+          isLoading = true;
+          nodes.clear();
+          edges.clear();
+
+          nodes.add((data.nodes || []).map(n => ({
+            ...n,
+            color: n.color || defaultNodeStyle
+          })));
+          edges.add(data.edges || []);
+
+          selectedNodeId = null;
+          document.getElementById("wordInput").value = "";
+          document.getElementById("meaningInput").value = "";
+          document.getElementById("relatedInput").value = "";
+          document.getElementById("typeInput").value = "noun";
+          buildInflectionTable(null);
+
+          isLoading = false;
+          saveGraph();
+          setStatus("Backup imported.");
+        }catch(err){
+          isLoading = false;
+          alert("Invalid backup file.");
+        }
+      };
+
+      reader.readAsText(file);
+    }
+
+    function performSearch(){
+      const q = document.getElementById("searchInput").value.trim().toLowerCase();
+
+      if (!q){
+        resetAllNodeAppearance();
+        return;
+      }
+
+      nodes.forEach(node => {
+        const label = (node.label || "").toLowerCase();
+        const meaning = (node.meaning || "").toLowerCase();
+        const match = label.includes(q) || meaning.includes(q);
+
+        nodes.update({
+          id: node.id,
+          color: match
+            ? { background: "#00f2fe", border: "#ffffff" }
+            : { background: "#09111d", border: "#173152" }
+        });
+      });
+    }
+
+    
+function updateStats(){
+
+  const wordCount = nodes.get().length;
+  const connectionCount = edges.get().length;
+
+  const avgLinks =
+    wordCount > 0
+      ? (connectionCount / wordCount).toFixed(2)
+      : 0;
+
+  const el = document.getElementById("graphStats");
+  if(el){
+    el.innerHTML =
+      "Words: " + wordCount +
+      " | Connections: " + connectionCount +
+      " | Avg Links: " + avgLinks;
+  }
+}
+
+
+function attachNetworkEvents(){
+      network.on("click", (params) => {
+        if (params.nodes.length){
+          selectedNodeId = params.nodes[0];
+          const node = nodes.get(selectedNodeId);
+          if (node) populateFields(node);
+        }
+      });
+
+      network.on("dragEnd", (params) => {
+        if (!params.nodes.length) return;
+
+        params.nodes.forEach(id => {
+          const pos = network.getPositions([id])[id];
+          const node = nodes.get(id);
+          if (!node || !pos) return;
+
+          nodes.update({
+            ...node,
+            x: pos.x,
+            y: pos.y,
+            fixed: { x: true, y: true },
+            physics: false
+          });
+        });
+
+        scheduleSave();
+      });
+    }
+
+    function attachUIEvents(){
+      document.getElementById("addBtn").addEventListener("click", addWord);
+      document.getElementById("saveBtn").addEventListener("click", saveSelected);
+      document.getElementById("deleteBtn").addEventListener("click", deleteSelected);
+      document.getElementById("exportBtn").addEventListener("click", exportData);
+      document.getElementById("importBtn").addEventListener("click", () => document.getElementById("importFile").click());
+
+      document.getElementById("importFile").addEventListener("change", (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (file) importData(file);
+      });
+
+      document.getElementById("searchInput").addEventListener("input", performSearch);
+
+      // live save on simple edits only for the currently selected node fields not needed,
+      // but they can still be changed via Save Changes.
+      ["wordInput", "meaningInput", "relatedInput", "typeInput"].forEach(id => {
+        document.getElementById(id).addEventListener("keydown", (e) => {
+          if (e.key === "Enter" && id !== "meaningInput") {
+            e.preventDefault();
+            addWord();
+          }
+        });
+      });
+    }
+
+    async function boot(){
+      setStatus("Initializing IndexedDB…");
+      await initDB();
+      isLoading = true;
+      await loadGraph();
+      isLoading = false;
+
+      attachNetworkEvents();
+      attachUIEvents();
+
+      resetAllNodeAppearance();
+      buildInflectionTable(null);
+      setStatus("Ready.");
+      updateStats();
+    }
+
+    nodes.on("*", () => {
+      if (!isLoading) scheduleSave();
+    });
+
+    edges.on("*", () => {
+      if (!isLoading) scheduleSave();
+    });
+
+    nodes.on("*", updateStats);
+edges.on("*", updateStats);
+
+boot();
+  </script>
+</body>
+</html>
